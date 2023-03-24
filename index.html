@@ -1,0 +1,231 @@
+                            <!DOCTYPE html>
+                            <html lang="pt-br">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Meu projeto Bootstrap</title>
+                                <link rel="stylesheet" href="/bootstrap.min.css">
+                                <link rel="preconnect" href="https://fonts.googleapis.com">
+                            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                            <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+
+                                <style>
+                                    body {
+                                    
+                                        background-color: black;
+                                    }
+                                    header {
+                                        margin-bottom: 46px;
+                                        font-family: 'Delicious Handrawn', cursive;
+                                    }
+                                    /* Centralize o carousel horizontalmente */
+                                    .carousel {
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                    .container {
+                                        max-width: 1000px;
+                                    }
+                                  
+
+                            /* Defina a largura máxima do carousel */
+                            .carousel-inner {
+                                max-width: 1000px;
+                            }
+
+                            /* Ajuste o tamanho das imagens no carousel */
+                            .carousel-item img {
+                                height: 500px;
+                                object-fit: cover;
+                            }
+
+                            /* Altere a cor de fundo dos controles do carousel */
+                            .carousel-control-prev,
+                            .carousel-control-next {
+                                background-color: rgba(0, 0, 0, 0.5);
+                            }
+                            .container .card {
+                                    margin-bottom: 20px; /* Add a 20px margin between cards */
+                                    }
+                         
+                            /* Altere a cor dos ícones dos controles do carousel */
+                            .carousel-control-prev-icon,
+                            .carousel-control-next-icon {
+                                color: #fff;
+                            }
+                            section h1 {
+                                text-align: center;
+                                font-family: 'Delicious Handrawn', cursive;
+                                font-size: 70px;
+                                color: blue;
+                                margin: 24px;
+                            }
+                            footer {
+                            
+                                margin-top: 30px;
+                                font-family: 'Delicious Handrawn', cursive;
+                                color: blue;
+                                text-align: center;
+                                font-size: large;
+
+                            }
+                            footer p {
+                                font-size: 24px;
+                            }
+                                </style>
+                            </head>
+                            <body class="border border-danger">
+                                
+                            <header >
+                                <div class="container">
+                                    <h1 class="text-primary text-center display-1 mb-4">Best singers</h1>
+                                    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div data-bs-interval="3000" class="carousel-item active">
+                                                <img class="d-block w-100" src="https://c4.wallpaperflare.com/wallpaper/312/387/624/music-nicki-minaj-model-rapper-wallpaper-preview.jpg">
+                                                <div class="carousel-caption">
+                                                    <h2 >Nicki Minaj</h2>
+                                                </div>
+                                            </div>
+                                            <div data-bs-interval="3000" class="carousel-item">
+                                                <img class="d-block w-100" src="https://c4.wallpaperflare.com/wallpaper/630/471/815/singers-bebe-rexha-hd-wallpaper-preview.jpg">
+                                                <div class="carousel-caption">
+                                                    <h2 class="">Bebe Rexha</h2>
+                                                </div>
+                                            </div>
+                                            <div data-bs-interval="3000" class="carousel-item">
+                                                <img class="d-block w-100" src="https://c4.wallpaperflare.com/wallpaper/213/421/261/ariana-grande-sweetener-hd-wallpaper-preview.jpg">
+                                                <div class="carousel-caption">
+                                                    <h2>Ariana Grande</h2>
+                                                </div>
+                                            </div>
+                                            <div data-bs-interval="3000" class="carousel-item">
+                                                <img class="d-block w-100" src="https://c4.wallpaperflare.com/wallpaper/573/475/639/beyonce-celebrity-beyonce-knowles-wallpaper-preview.jpg">
+                                                <div class="carousel-caption">
+                                                    <h2>Beyoncé</h2>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </button>
+                                        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                                            <span class="carousel-control-next-icon"></span>
+                                        </button>
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carousel-exemplo"   class="active" data-bs-slide-to= "0"></button>
+                                            <button type="button" data-bs-target="#carousel-exemplo"   data-bs-slide-to= "1"></button>
+                                            <button type="button" data-bs-target="#carousel-exemplo"   data-bs-slide-to= "2"></button>
+                                            <button type="button" data-bs-target="#carousel-exemplo"   data-bs-slide-to= "3"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </header>
+                                <hr class="border border-danger ">
+                            <section>
+                                <h1>News</h1>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                            <div class="card">
+                                        
+                                            <img src="https://c4.wallpaperflare.com/wallpaper/102/974/515/nicki-minaj-large-for-desktop-wallpaper-preview.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title text-primary">Nicki Minaj vai lançar própria gravadora:</h4>
+                                                <h5 class="card-subtitle m-2"> “temos outros gêneros de música”</h5>
+                                                <p id="card-text-1">Nicki Minaj anunciou que lançará sua gravadora, durante o último episódio do programa de rádio ‘Queen Radio‘. O nome oficial da empresa ainda não foi revelado pela artista, mas ela divulgou uma lista de talentos que serão incluídos no casting e refletiu sobre a importância do projeto.</p>
+                                                <a href="#" class="btn btn-primary">Leia mais</a>
+                                            </div>
+                                            </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                        <div class="card ">
+                                    
+                                        <img src="https://c4.wallpaperflare.com/wallpaper/134/148/881/nicki-minaj-anaconda-singer-wallpaper-preview.jpg">
+                                        <div class="card-body">
+                                            <h4 class="card-title text-primary">Nicki Minaj faz 40 anos de idade; </h4>
+                                            <h5 class="card-subtitle m-2"> veja as 10 músicas mais tocadas no Brasil...</h5>
+                                            <p>Hoje é aniversário de Onika Tanya Maraj-Petty, conhecida mundialmente com Nicki Minaj. Estonteante cantora, compositora, rapper e brilhante clarinetista, Minaj é cidadã norte-americana, mas nasceu em Trinidad e Tobago.</p>
+                                            <a href="#" class="btn btn-primary">Leia mais</a>
+                                        </div>
+                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                    <div class="card ">
+                                
+                                    <img src="https://c4.wallpaperflare.com/wallpaper/190/769/217/babe-hip-hop-minaj-wallpaper-preview.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-primary m-2">Nicki Minaj dispara contra Megan Thee Stallion durante show</h4>
+                                        <h5 class="card-subtitle m-2  ">Muitos fãs de Nicki Minaj acreditam além de citar Megan Thee Stallion ela também mencionou Latto.</h5>
+                                        <p> No final de 2022, vimos Nicki Minaj e Latto trocando insultos depois que a última a perturbou com seus comentários sobre a diferença entre o clima atual da indústria e como era quando a Rainha do Rap estava no auge. No início deste fim de semana, esse drama foi aparentemente abordado em seu single “Red Ruby Da Sleeze”.</p>
+                                        <a href="#" class="btn btn-primary">Leia mais</a>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                <div class="card ">
+                            
+                                <img src="https://c4.wallpaperflare.com/wallpaper/461/243/626/4k-bebe-rexha-wallpaper-preview.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title text-danger">Bebe Rexha adianta trecho de novo single nas redes sociais; </h4>
+                                    <h5 class="card-subtitle m-2">  Intitulada “Call On Me”, a faixa chega com uma sonoridade eletrônica e bastante dançante</h5> 
+                                    <p>Na noite desta terça-feira (21), Bebe Rexha animou os fãs ao compartilhar um trecho de uma faixa inédita, que ainda não ganhou previsão de estreia. A cantora está prestes a lançar seu novo álbum de estúdio, programado para 28 de abril.</p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                <div class="card">
+                            
+                                <img src="https://c4.wallpaperflare.com/wallpaper/412/602/425/ariana-grande-celebrity-legs-high-heels-wallpaper-preview.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title text-warning">Dupla de sucesso! The Weeknd e Ariana Grande escalam até o topo do Spotify Global</h4>
+                                    <h5 class="card-subtitl m-2">Juntos em uma quarta parceria, eles dividem os vocais no remix de “Die For You”</h5>
+                                    <p>Não tem jeito, a junção entre The Weeknd e Ariana Grande é mesmo a tradução de sucesso! Nesta quinta-feira (9), exatos dez dias após o lançamento, a dupla amanheceu no topo do Spotify Global com o remix de “Die For You”.</p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                                <div class="card">
+                            
+                                <img src="https://observatoriodosfamosos.uol.com.br/portal/wp-content/uploads/2023/03/Beyonce-e-Chris-Martin.jpg">
+                                <div class="card-body">
+                                    <h4 class="card-title">Chris Martin, do Coldplay, aponta suposto problema de saúde de Beyoncé</h4>
+                                    <h5 class="card-subtitle m-2">Vocalista da banda britânica indicou uma suposta cirurgia recente feita pela Queen B!</h5>
+                                    <p>Em entrevista ao podcast do apresentador Conan O’Brien, o artista britânico rasgou elogios à Queen B!, e contou que possui um problema na região, assim como ela. “Ela é minha heroína, minha irmã, meu tudo. Mas é engraçado, porque eu disse à ela que eu tenho um problema no joelho que adquiri no palco”, disse.</p>
+                                    <a href="#" class="btn btn-primary">Leia mais</a>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                    </section>
+                                    <hr class="border border-danger ">
+
+                                    <footer class="footer ">
+                                        <div class="container-fluid">
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                              <h3 class="text-info">Best Singer</h3>
+                                              <p>world of music</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                              <h3 class="text-info">Follow Us</h3>
+                                              <ul class="list-unstyled">
+                                                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </footer>
+                                    
+                        
+
+                                <script src="/bootstrap.bundle.min.js"></script>
+                             
+                            </body>
+                            </html>
